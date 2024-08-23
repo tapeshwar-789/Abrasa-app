@@ -6,11 +6,10 @@ import { ContactComponent } from '../contact/contact.component';
 import { CarouselComponent } from '../carousel/carousel.component'; 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CardsComponent } from "../cards/cards.component";
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [FormsModule, HeaderComponent, HeroComponent, FooterComponent, ContactComponent, CarouselComponent, CommonModule,CardsComponent, CardsComponent],
+  imports: [FormsModule, HeaderComponent, HeroComponent, FooterComponent, ContactComponent, CarouselComponent, CommonModule],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
