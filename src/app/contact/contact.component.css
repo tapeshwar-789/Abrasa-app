@@ -1,10 +1,25 @@
 .contacts-container {
+    position: relative;
+    top: 80px;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .greetings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    height: 50vh;
+  }
+  .main{
+    background-color: #cad6e2;
+    background-image: url("/blueberries-2278921_1920.jpg");
+    background-repeat: no-repeat;
+    height: 150vh;
   }
   
   .contacts-title {
