@@ -3,11 +3,13 @@ import { CommonModule,NgFor } from '@angular/common';
 import { FormsModule, NgModel } from '@angular/forms';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from '../footer/footer.component';
+import { routes} from '../app.routes';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule, NgFor, FormsModule, HeaderComponent,FooterComponent],
+  imports: [CommonModule, NgFor, FormsModule, HeaderComponent,FooterComponent,RouterModule],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })

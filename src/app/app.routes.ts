@@ -7,12 +7,14 @@ import { NgModule } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ContactComponent } from './contact/contact.component';
+import { TrainingAppComponent } from './training-app/training-app.component';
 
 export const routes: Routes = [
     {path:'',component:HomepageComponent},
     {path:'services',component:ServicesComponent},
     {path:'contact',component:ContactComponent},
-    {path:'**',redirectTo:'',pathMatch:'full'}
+    {path:'trainings',component:TrainingAppComponent},
+    // {path:'**',redirectTo:'',pathMatch:'full'}
 ];
 
 @NgModule({

@@ -1,0 +1,53 @@
+/* Gradient for the entire section background */
+.services-container {
+  background-image: linear-gradient(135deg, #bcc5c9 0%, #ff5e62 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Gradient for individual service cards */
+.service-card {
+  background-image: linear-gradient(135deg, #6423a9 0%, #2575fc 100%);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+  flex-grow: 1;
+  flex-basis: calc(50% - 40px);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service-card ul {
+  padding-left: 20px;
+}
+
+.service-card ul li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
